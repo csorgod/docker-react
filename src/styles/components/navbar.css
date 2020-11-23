@@ -1,0 +1,11 @@
+.navbar {
+    
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-link {
+    color: var(--c-white) !important;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-link:hover {
+    color: var(--c-dirtywhite) !important;
+}

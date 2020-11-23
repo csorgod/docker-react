@@ -1,0 +1,84 @@
+.search-bar .input-group .input-group-append .dropdown-toggle {
+    background-color: var(--c-white);
+    color: var(--c-lightgray);
+    border-left-color: var(--c-lightgray);
+    font-size: 15px;
+    padding: 0 30px 0 30px;
+    min-width: 180px;
+    max-width: 180px;
+}
+
+.search-bar .input-group .input-group-append .dropdown-toggle:after {
+    content: none !important;
+}
+
+.search-bar .input-group .dropdown #city {
+    min-width: 180px;
+    max-width: 180px;
+}
+
+.search-bar .input-group .dropdown #pet {
+    background-color: var(--c-white);
+    color: var(--c-lightgray);
+    border-left-color: var(--c-lightgray);
+    font-size: 15px;
+    padding: 0 30px 0 30px;
+    min-width: 150px;
+    max-width: 150px;
+}
+
+.search-bar .input-group .dropdown .dropdown-menu {
+    position: relative;
+    inset: 10px auto auto 2px !important;
+    font-size: 20px;
+}
+
+.search-bar .input-group .dropdown .dropdown-menu:after {
+    content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 0.469em solid transparent;
+	border-bottom-color: var(--c-white);
+	border-top: 0;
+	margin-left: -0.469em;
+	margin-top: -0.469em;
+}
+
+.search-bar .input-group .dropdown .dropdown-menu .dropdown-item {
+    color: var(--c-chumbo);
+    text-align: center;
+}
+
+.search-bar .input-group .input-group-append .button{
+    background-color: var(--c-baseaquablue);
+    border-radius: 0 10px 10px 0;
+    color: var(--c-white);
+}
+
+.search-bar .input-group .input-group-append .button:hover {
+    background-color: #479D99;
+    border-radius: 0 10px 10px 0;
+    color: var(--c-white);
+
+    transition: background-color 0.3s;
+}
+
+.input-field {
+    border: 0px;
+    width: 100%;
+    height: 55px;
+    color: var(--c-white);
+    border-radius: 10px 0 0 10px;
+    
+    margin: auto;
+    align-self: baseline;
+
+    font-size: 1.1em !important;
+}
+
+.input-field::placeholder {
+    color: var(--c-lightgray);
+}

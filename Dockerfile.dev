@@ -1,0 +1,47 @@
+# Use an existing docker image as a base
+#FROM node:6.14
+FROM node:lts-alpine
+#FROM node
+
+# Download and install dependencies
+#RUN sudo apt install npm
+
+WORKDIR /app
+
+COPY package.json .
+#RUN npm cache clean --force
+RUN npm install 
+
+COPY ./ ./
+#--no-bin-links
+
+# Tell the image what to do when it start as a container
+CMD ["npm", "start"]
+
+#docker build  .
+#docker run <IMAGE_ID>
+
+#Especificar nome do arquivo
+#docker build  -f Dockerfile.dev .
+
+#Usando tag
+#docker build -t docker_id/project_name:version .
+
+#docker build -t csorgo/adote-um-pet:latest .
+#docker run csorgo/adote-um-pet
+
+#criar imagem baseada no container
+#docker commit -c "CMD 'redis-server'" CONTAINERID
+
+#redirecionando IP
+#docker run -p 8080:8080 csorgo/adote-um-pet
+
+### DOCKER COMPOSER ###
+
+#docker-compose up
+#docker-compose up -d
+#docker-compose down
+
+#docker-compose ps Mostra o status dos cotainers dentro do arquivo docker-compose
+
+#docker run -it -p 3000:3000 -v $(pwd):/app <IMAGE_ID>
